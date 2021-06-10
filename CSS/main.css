@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background: rgba(230, 239, 245, 1);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	font-family: 'Karla', sans-seirf;
+}
+
+.col1-header {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: rgba(42, 179, 177, 1);
+	margin-bottom: 1.5rem;
+}
+
+.col1-accent-text {
+	font-size: .9375rem;
+	font-weight: 700;
+	color: rgba(192, 223, 51, 1);
+	line-height: 20px;
+	margin-bottom: 1rem;
+}
+
+.col1-body-text {
+	font-size: .875rem;
+	color: rgba(154, 167, 190, 1);
+	line-height: 26px;	
+}
+
+.col2-header {
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.col2-price-month {
+	font-size: 1rem;
+	color: hsla(0,0%,100%,0.50);
+	display: inline;
+	position: relative;
+	top: -6px;
+}
+
+.bold {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	padding-right: 11px;
+	display: inline;
+}
+
+.col2-price-day {
+	font-size: 1rem;
+	color: #fff;
+	margin-top: .5rem;
+	margin-bottom: 2rem;
+}
+
+.btn-signup {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 1em 6.375em;
+	color: #fff;
+	background: rgba(192, 223, 51, 1);
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+	border-radius: 5px;
+	transform: scale(1);
+	opacity: 1;
+	transition: transform, opacity 200ms;
+}
+
+.btn-signup:hover,
+.btn-signup:focus {
+	transform: scale(1.1);
+	opacity: .9;
+}
+
+.col3-header {
+	font-size: 1.125rem;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 1.4rem;
+}
+
+.col3-why-text {
+	font-size: .875rem;
+	color: hsla(0,0%,100%,.75);
+	margin: 0 0 .3em 0;
+}
+
+/*========Layout========*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.col1 {
+	background: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 1.5em; 
+}
+
+.col2 {
+	background: rgba(42, 179, 177, 1);
+	padding: 1.5em;
+}
+
+.col3 {
+	background: hsla(179, 62%, 43%, .85);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 1.5em;
+}
+
+
+@media (min-width: 615px) {
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 635px;
+	}
+
+	.col2,
+	.col3 {
+		flex: 1 1 25%;
+	}
+
+	.col2 {
+		border-bottom-left-radius: 5px;
+		padding: 40px;
+	}
+	
+	.col3 {
+		border-bottom-left-radius: 0;
+		padding: 40px;
+	}
+	
+	.btn-signup {
+		font-size: 14px;
+		transform: scale(1.04)
+	}
+}
+
+
+
+
+
+
+
+
+
+
